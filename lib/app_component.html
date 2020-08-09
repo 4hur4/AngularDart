@@ -1,0 +1,51 @@
+<body>
+<div class="container-fluid">
+    <br>
+    <h3>Sticky da</h3>
+    <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>
+</div>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top ">
+
+    <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <ul class="collapse navbar-collapse nav navbar-nav " id="collapsibleNavbar">
+        <li class="nav-item">
+            <a class="nav-link bg-dark my-auto" data-toggle="tab" href="#main">Main</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link bg-dark my-auto" data-toggle="tab" href="#login">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link bg-dark my-auto" data-toggle="tab" href="#register">Register</a>
+        </li>
+        <li class="nav-item mr-md-auto">
+            <a class="nav-link bg-dark my-auto" data-toggle="tab" href="#contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <form action="/action_page.php" class="form-inline">
+                <input class="form-control" placeholder="Search" type="text">
+                <div class="input-group-append">
+                    <button class="form-control btn btn-success" type="submit">Search</button>
+                </div>
+            </form>
+        </li>
+    </ul>
+</nav>
+
+</body>
+
+<div class="tab-content">
+    <div class="tab-pane container-fluid active my-3" id="main">Main</div>
+    <div class="tab-pane container-fluid fade my-3" id="login">
+        <login-component></login-component>
+    </div>
+    <div class="tab-pane container-fluid fade my-3" id="register">
+        <register-component></register-component>
+    </div>
+    <div class="tab-pane container-fluid fade my-3" id="contact">
+        <contact-component></contact-component>
+    </div>
+</div>
